@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Fondo azul claro */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00695c; /* Color verde oscuro */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #004d40; /* Color verde más oscuro */
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #4db6ac; /* Borde verde claro */
+    border-radius: 4px;
+    background-color: #f0f4c3; /* Fondo de campo de entrada amarillo claro */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b; /* Fondo verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40; /* Color verde oscuro al pasar el mouse */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9; /* Fondo verde suave */
+    border: 1px solid #4caf50; /* Borde verde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+.result:hover {
+    background-color: #c8e6c9; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+.result p {
+    font-size: 18px; /* Tamaño de fuente atractivo */
+    font-weight: bold; /* Texto en negrita */
+    color: #2e7d32; /* Color de texto verde oscuro */
+}
+
+

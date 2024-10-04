@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Resistividad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Simulador de Resistividad</h1>
+    <form id="resistivityForm">
+        <label for="calculo">¿Qué deseas calcular?</label>
+        <select id="calculo" name="calculo">
+            <option value="resistencia">Resistencia (R)</option>
+            <option value="resistividad">Resistividad (ρ)</option>
+            <option value="longitud">Longitud (L)</option>
+            <option value="area">Área (A)</option>
+        </select>
+
+        <div id="inputs">
+            <!-- Los campos de entrada se insertarán aquí -->
+        </div>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <!-- Este es el contenedor para mostrar los resultados -->
+    <div id="result" class="result">
+        <p id="resultadoTexto"></p> <!-- Aquí se mostrará el resultado -->
+    </div>
+
+    <script src="js/simulador.js"></script>
+</body>
+</html>
+
+
+
+
+
