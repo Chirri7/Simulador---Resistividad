@@ -7,16 +7,46 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #1a1a1a; /* Fondo gris oscuro */
-    padding: 20px;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); /* Sombra dorada suave */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para los contenedores */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #d4af37; /* Color dorado */
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 h1 {
-    text-align: center;
+    color: #d4af37; /* Color dorado */
+}
+
+h2 {
+    color: #d4af37; /* Color dorado */
+}
+
+h3 {
     color: #d4af37; /* Color dorado */
 }
 
@@ -66,4 +96,9 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     color: #f0e6d2; /* Texto blanco-dorado */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
