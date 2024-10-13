@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Simulador de Resistividad</h1>
-    <form id="resistivityForm">
-        <label for="calculo">¿Qué deseas calcular?</label>
-        <select id="calculo" name="calculo">
-            <option value="resistencia">Resistencia (R)</option>
-            <option value="resistividad">Resistividad (ρ)</option>
-            <option value="longitud">Longitud (L)</option>
-            <option value="area">Área (A)</option>
-        </select>
+    <div class="container">
+        <h1>Simulador de Resistividad</h1>
+        <form id="resistivityForm">
+            <label for="calculo">¿Qué deseas calcular?</label>
+            <select id="calculo" name="calculo">
+                <option value="resistencia">Resistencia (R)</option>
+                <option value="resistividad">Resistividad (ρ)</option>
+                <option value="longitud">Longitud (L)</option>
+                <option value="area">Área (A)</option>
+            </select>
 
-        <div id="inputs">
-            <!-- Los campos de entrada se insertarán aquí -->
+            <div id="inputs">
+                <!-- Los campos de entrada se insertarán aquí -->
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result" class="result">
+            <p id="resultadoTexto"></p> <!-- Aquí se mostrará el resultado -->
+            <p id="feedbackTexto"></p> <!-- Aquí se mostrará la retroalimentación explicativa -->
+            <p id="sugerenciaTexto"></p> <!-- Aquí se mostrarán las sugerencias inteligentes -->
         </div>
-
-        <button type="submit">Calcular</button>
-    </form>
-
-    <div id="result" class="result">
-        <p id="resultadoTexto"></p> <!-- Aquí se mostrará el resultado -->
-        <p id="feedbackTexto"></p> <!-- Aquí se mostrará la retroalimentación explicativa -->
-        <p id="sugerenciaTexto"></p> <!-- Aquí se mostrarán las sugerencias inteligentes -->
     </div>
 
     <script src="js/simulador.js"></script>
