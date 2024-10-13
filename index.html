@@ -7,8 +7,33 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Simulador de Resistividad</h1>
+        <nav>
+            <ul>
+                <li><a href="#teoria">Teoría</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#ejemplos">Ejemplos Prácticos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="teoria" class="container">
+        <h2>Teoría de Resistividad</h2>
+        <p>La resistividad es una propiedad intrínseca de los materiales que mide su capacidad para resistir el flujo de corriente eléctrica. Se expresa en ohmios metro (Ω·m).</p>
+        <p>Los factores que afectan la resistencia de un conductor son:</p>
+        <ul>
+            <li><strong>Longitud (L):</strong> A mayor longitud, mayor resistencia.</li>
+            <li><strong>Área (A):</strong> A mayor área, menor resistencia.</li>
+            <li><strong>Resistividad (ρ):</strong> Depende del material del conductor.</li>
+        </ul>
+        <p>La fórmula básica para calcular la resistencia es:</p>
+        <p><strong>R = ρ (L / A)</strong></p>
+    </section>
+
+    <section id="simulador" class="container">
+        <h2>Simulador de Resistividad</h2>
         <form id="resistivityForm">
             <label for="calculo">¿Qué deseas calcular?</label>
             <select id="calculo" name="calculo">
@@ -17,20 +42,33 @@
                 <option value="longitud">Longitud (L)</option>
                 <option value="area">Área (A)</option>
             </select>
-
-            <div id="inputs">
-                <!-- Los campos de entrada se insertarán aquí -->
-            </div>
-
+            <div id="inputs"></div>
             <button type="submit">Calcular</button>
         </form>
-
         <div id="result" class="result">
-            <p id="resultadoTexto"></p> <!-- Aquí se mostrará el resultado -->
-            <p id="feedbackTexto"></p> <!-- Aquí se mostrará la retroalimentación explicativa -->
-            <p id="sugerenciaTexto"></p> <!-- Aquí se mostrarán las sugerencias inteligentes -->
+            <p id="resultadoTexto"></p>
+            <p id="feedbackTexto"></p>
+            <p id="sugerenciaTexto"></p>
         </div>
-    </div>
+    </section>
+
+    <section id="ejemplos" class="container">
+        <h2>Ejemplos Prácticos</h2>
+        <p>A continuación, se presentan algunos ejemplos de cómo utilizar el simulador:</p>
+        <h3>Ejemplo 1: Calcular la Resistencia</h3>
+        <p>Si tienes una resistividad de <strong>1.68 × 10<sup>-8</sup> Ω·m</strong>, una longitud de <strong>2 m</strong> y un área de <strong>0.0001 m²</strong>, la resistencia se calcula como:</p>
+        <p><strong>R = ρ (L / A) = 1.68 × 10<sup>-8</sup> (2 / 0.0001) = 0.336 Ω</strong></p>
+
+        <h3>Ejemplo 2: Calcular la Resistividad</h3>
+        <p>Si tienes una resistencia de <strong>5 Ω</strong>, longitud de <strong>3 m</strong> y área de <strong>0.01 m²</strong>, la resistividad se calcula como:</p>
+        <p><strong>ρ = R (A / L) = 5 (0.01 / 3) = 0.0167 Ω·m</strong></p>
+    </section>
+
+    <footer id="contacto" class="container">
+        <h3>Contacto</h3>
+        <p>Email: varelaj565@gmail.com</p>
+        <p>&copy; 2024 Juan David Varela Castillo- Juliana Arizmendi-Sebastian Estupiñan. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="js/simulador.js"></script>
 </body>
